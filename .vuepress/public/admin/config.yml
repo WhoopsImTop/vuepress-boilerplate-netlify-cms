@@ -17,3 +17,13 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Blog"
+    label: "Blog"
+    folder: "/blog"
+    create: true
+    slug: "/blog/{{slug}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Veröffentlicht am:", name: "created_am", widget: "datetime" }
+      - { label: "Beitragsbild", name: "thumbnail", widget: "file" }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
